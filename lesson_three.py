@@ -2,8 +2,6 @@ import cv2
 
 video = cv2.VideoCapture('cat.MP4')
 
-
-
 while True:
     
     rep , frame = video.read()
