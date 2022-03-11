@@ -4,7 +4,7 @@ from matplotlib.pyplot import gray
 img = cv2.imread('image_person.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 faceCascade = cv2.CascadeClassifier('face_detect.xml')
-faceRect = faceCascade.detectMultiScale(gray,(1.1), 2)
+faceRect = faceCascade.detectMultiScale(gray,(1.1), 3)
 print(len(faceRect))
 
 for (x, y, w, h) in faceRect:
